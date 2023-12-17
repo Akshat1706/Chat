@@ -17,30 +17,32 @@ font-family: 'Roboto', sans-serif; */
   --accent: #008284;
 } */
 
+.head {
+    margin-top:-3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size:1rem;
 
-.main_div {
+}
+
+.chat_div {
   height: 39rem;
-  widows: 100rem;
+  width: 100rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 1rem;
-  overflow: hidden;
 }
-
-.heading {
-  color:#fff;
-  text-align:left;
-  font-family: 'Montserrat', sans-serif;
-  font-size:3rem;
-  margin-top: 4rem;
-  margin-left: 5rem;
+.chat_border {
+  border: 2px solid #FDD85D;
+  padding: 4rem;
+  border-radius: 25px;
+  width: 40rem;
+  margin-top: -7rem;
+  margin-left: -10rem;
 }
-
-.main_input {
+.chat_input {
   height: 2rem;
-  font-size:1.2rem;
+  font-size:1rem;
   font-family: 'Poppins', sans-serif;
   text-align:center;
   width: 15rem;
@@ -48,7 +50,7 @@ font-family: 'Roboto', sans-serif; */
   border: 2px solid #FDD85D;
   border-radius:25px;
 }
-.main_button {
+.chat_button {
   padding: 0.6rem 4rem 0.6rem 4rem;
   border-radius: 20px;
   border: 2px solid white;
@@ -56,25 +58,30 @@ font-family: 'Roboto', sans-serif; */
   color: black;
   font-size: 1.2rem;
   font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+.chatProfileRight {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-direction: row-reverse;
+  margin-bottom: 5px;
+}
+.chatProfileLeft {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+.chatProfileSpan {
+  background-color: rgb(213, 213, 182);
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-
-}
-.loading_spinner {
-  border: 4px solid rgba(0, 0, 0, 0.3);
-  border-top: 4px solid #2196f3;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  animation: spin 1s linear infinite;
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  color: black;
 }
