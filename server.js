@@ -6,7 +6,7 @@ const httpServer = http.createServer();
 
 const io = new Server(httpServer, {
   cors: {
-    origin: "https://chat-akshat1706.vercel.app/", // Replace with your frontend URL
+    origin: "https://chat-akshat1706.vercel.app", // Replace with your frontend URL
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true,
